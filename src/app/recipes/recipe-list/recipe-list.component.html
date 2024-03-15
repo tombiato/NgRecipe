@@ -14,12 +14,14 @@
           <h4>{{ recipe.name }}</h4>
           <p>{{ recipe.description }}</p>
         </div>
-        <span class="float-end">
+        <div class="float-end">
           <img alt=""
                class="img-fluid"
-               src="{{ recipe.imagePath }}"
-               style="max-height: 50px" />
-        </span>
+               height="100"
+               ngSrc="{{ recipe.imagePath }}"
+               width="100"
+          />
+        </div>
       </a>
     </div>
     <app-recipe-item></app-recipe-item>
